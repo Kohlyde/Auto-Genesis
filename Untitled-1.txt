@@ -1,0 +1,114 @@
+<div class="container">
+<h1 class="section-header-bold">Browse Categories</h1>
+<div class="row">
+<div id="browse-categories" class="category-select-container">
+<label for="category">Category</label>
+<div class="row">
+<div class="col s6">
+<label for="type">Type</label>
+<select id="level-0-category" name="level-0-category" class="browser-default category-select" size="10" style="height:100%">
+<option value="1" class data-slug="bass" data-redirect-url="#bass">Bass</option>
+<option value="16" class data-slug="bowed-string" data-redirect-url="#bowed-string">Bowed string</option>
+<option value="11" class data-slug="brass" data-redirect-url="#brass">Brass</option>
+<option value="33" class data-slug="drums" data-redirect-url="#drums">Drums</option>
+<option value="19" class data-slug="field-recordings" data-redirect-url="#field-recordings">Field recordings</option>
+<option value="20" class data-slug="guitar" data-redirect-url="#guitar">Guitar</option>
+<option value="23" class data-slug="keys" data-redirect-url="#keys">Keys</option>
+<option value="32" class data-slug="pads-atmospheres" data-redirect-url="#pads-atmospheres">Pads &amp; atmospheres</option>
+<option value="48" class data-slug="plucked-string" data-redirect-url="#plucked-string">Plucked string</option>
+<option value="54" class data-slug="sound-effects" data-redirect-url="#sound-effects">Sound effects</option>
+<option value="62" class data-slug="synthesizers" data-redirect-url="#synthesizers">Synthesizers</option>
+<option value="63" class data-slug="vocals" data-redirect-url="#vocals">Vocals</option>
+<option value="68" class data-slug="woodwinds" data-redirect-url="#woodwinds">Woodwinds</option>
+</select>
+</div>
+<div class="col s6">
+<label for="subtype">Subtype</label>
+<select id="level-1-category" name="level-1-category" class="browser-default category-select" size="10" style="height:100%">
+<option value="64" class="63" data-slug="acappelas" data-redirect-url="#acappelas">Acappelas</option>
+<option value="24" class="23" data-slug="accordion" data-redirect-url="#accordion">Accordion</option>
+<option value="21" class="20" data-slug="acoustic-guitar" data-redirect-url="#acoustic-guitar">Acoustic guitar</option>
+<option value="6" class="1" data-slug="analog-synth-bass" data-redirect-url="#analog-synth-bass">Analog synth bass</option>
+<option value="69" class="68" data-slug="bagpipes" data-redirect-url="#bagpipes">Bagpipes</option>
+<option value="49" class="48" data-slug="banjo" data-redirect-url="#banjo">Banjo</option>
+<option value="10" class="1" data-slug="bass-line" data-redirect-url="#bass-line">Bass line</option>
+<option value="70" class="68" data-slug="bassoon" data-redirect-url="#bassoon">Bassoon</option>
+<option value="94" class="33" data-slug="bells" data-redirect-url="#bells">Bells</option>
+<option value="46" class="33" data-slug="breakbeat" data-redirect-url="#breakbeat">Breakbeat</option>
+<option value="17" class="16" data-slug="cello" data-redirect-url="#cello">Cello</option>
+<option value="36" class="33" data-slug="claps" data-redirect-url="#claps">Claps</option>
+<option value="71" class="68" data-slug="clarinet" data-redirect-url="#clarinet">Clarinet</option>
+<option value="25" class="23" data-slug="clavichord" data-redirect-url="#clavichord">Clavichord</option>
+<option value="26" class="23" data-slug="clavinet" data-redirect-url="#clavinet">Clavinet</option>
+<option value="39" class="33" data-slug="closed-hi-hats" data-redirect-url="#closed-hi-hats">Closed hi-hats</option>
+<option value="43" class="33" data-slug="cowbell" data-redirect-url="#cowbell">Cowbell</option>
+<option value="41" class="33" data-slug="crashes" data-redirect-url="#crashes">Crashes</option>
+<option value="7" class="1" data-slug="digital-synth-bass" data-redirect-url="#digital-synth-bass">Digital synth bass</option>
+<option value="8" class="1" data-slug="distorted-bass" data-redirect-url="#distorted-bass">Distorted bass</option>
+<option value="22" class="20" data-slug="electric-guitar" data-redirect-url="#electric-guitar">Electric guitar</option>
+<option value="93" class="54" data-slug="electronic" data-redirect-url="#electronic">Electronic</option>
+<option value="92" class="54" data-slug="explosions" data-redirect-url="#explosions">Explosions</option>
+<option value="2" class="1" data-slug="fingered-bass" data-redirect-url="#fingered-bass">Fingered bass</option>
+<option value="89" class="11" data-slug="flugel-horn" data-redirect-url="#flugel-horn">Flugel horn</option>
+<option value="72" class="68" data-slug="flute" data-redirect-url="#flute">Flute</option>
+<option value="47" class="33" data-slug="found-objects" data-redirect-url="#found-objects">Found objects</option>
+<option value="13" class="11" data-slug="french-horn" data-redirect-url="#french-horn">French horn</option>
+<option value="50" class="48" data-slug="harp" data-redirect-url="#harp">Harp</option>
+<option value="27" class="23" data-slug="harpischord" data-redirect-url="#harpischord">Harpischord</option>
+<option value="34" class="33" data-slug="kicks" data-redirect-url="#kicks">Kicks</option>
+<option value="45" class="33" data-slug="latin-african" data-redirect-url="#latin-african">Latin &amp; african</option>
+<option value="84" class="62" data-slug="lead" data-redirect-url="#lead">Lead</option>
+<option value="57" class="54" data-slug="machines" data-redirect-url="#machines">Machines</option>
+<option value="51" class="48" data-slug="mandolin" data-redirect-url="#mandolin">Mandolin</option>
+<option value="55" class="54" data-slug="metal" data-redirect-url="#metal">Metal</option>
+<option value="82" class="33" data-slug="mixed" data-redirect-url="#mixed">Mixed</option>
+<option value="56" class="54" data-slug="nature" data-redirect-url="#nature">Nature</option>
+<option value="58" class="54" data-slug="noise" data-redirect-url="#noise">Noise</option>
+<option value="73" class="68" data-slug="oboe" data-redirect-url="#oboe">Oboe</option>
+<option value="74" class="68" data-slug="ocarina" data-redirect-url="#ocarina">Ocarina</option>
+<option value="38" class="33" data-slug="open-hi-hats" data-redirect-url="#open-hi-hats">Open hi-hats</option>
+<option value="28" class="23" data-slug="organ" data-redirect-url="#organ">Organ</option>
+<option value="61" class="54" data-slug="other-fx" data-redirect-url="#other-fx">Other fx</option>
+<option value="90" class="48" data-slug="other-plucked" data-redirect-url="#other-plucked">Other plucked</option>
+<option value="91" class="68" data-slug="other-winds" data-redirect-url="#other-winds">Other winds</option>
+<option value="29" class="23" data-slug="piano" data-redirect-url="#piano">Piano</option>
+<option value="75" class="68" data-slug="piccolo" data-redirect-url="#piccolo">Piccolo</option>
+<option value="3" class="1" data-slug="picked-bass" data-redirect-url="#picked-bass">Picked bass</option>
+<option value="76" class="68" data-slug="recorder" data-redirect-url="#recorder">Recorder</option>
+<option value="30" class="23" data-slug="rhodes-piano" data-redirect-url="#rhodes-piano">Rhodes piano</option>
+<option value="40" class="33" data-slug="rides" data-redirect-url="#rides">Rides</option>
+<option value="77" class="68" data-slug="saxophone" data-redirect-url="#saxophone">Saxophone</option>
+<option value="87" class="33" data-slug="shaker" data-redirect-url="#shaker">Shaker</option>
+<option value="59" class="54" data-slug="shots" data-redirect-url="#shots">Shots</option>
+<option value="65" class="63" data-slug="singing" data-redirect-url="#singing">Singing</option>
+<option value="52" class="48" data-slug="sitar" data-redirect-url="#sitar">Sitar</option>
+<option value="4" class="1" data-slug="slapped-bass" data-redirect-url="#slapped-bass">Slapped bass</option>
+<option value="35" class="33" data-slug="snares" data-redirect-url="#snares">Snares</option>
+<option value="66" class="63" data-slug="spoken" data-redirect-url="#spoken">Spoken</option>
+<option value="9" class="1" data-slug="sub-bass" data-redirect-url="#sub-bass">Sub bass</option>
+<option value="79" class="16" data-slug="synth-bowed-string" data-redirect-url="#synth-bowed-string">Synth bowed string</option>
+<option value="78" class="11" data-slug="synth-brass" data-redirect-url="#synth-brass">Synth brass</option>
+<option value="88" class="33" data-slug="synth-drums" data-redirect-url="#synth-drums">Synth drums</option>
+<option value="85" class="62" data-slug="synth-fx" data-redirect-url="#synth-fx">Synth fx</option>
+<option value="80" class="20" data-slug="synth-guitar" data-redirect-url="#synth-guitar">Synth guitar</option>
+<option value="81" class="23" data-slug="synth-keys" data-redirect-url="#synth-keys">Synth keys</option>
+<option value="83" class="48" data-slug="synth-plucked-string" data-redirect-url="#synth-plucked-string">Synth plucked string</option>
+<option value="86" class="68" data-slug="synth-woodwind" data-redirect-url="#synth-woodwind">Synth woodwind</option>
+<option value="44" class="33" data-slug="tambourines" data-redirect-url="#tambourines">Tambourines</option>
+<option value="37" class="33" data-slug="toms" data-redirect-url="#toms">Toms</option>
+<option value="15" class="11" data-slug="trombone" data-redirect-url="#trombone">Trombone</option>
+<option value="12" class="11" data-slug="trumpet" data-redirect-url="#trumpet">Trumpet</option>
+<option value="14" class="11" data-slug="tuba" data-redirect-url="#tuba">Tuba</option>
+<option value="53" class="48" data-slug="ukulele" data-redirect-url="#ukulele">Ukulele</option>
+<option value="5" class="1" data-slug="upright-bass" data-redirect-url="#upright-bass">Upright bass</option>
+<option value="18" class="16" data-slug="violin" data-redirect-url="#violin">Violin</option>
+<option value="67" class="63" data-slug="vocal-fx" data-redirect-url="#vocal-fx">Vocal fx</option>
+<option value="60" class="54" data-slug="water" data-redirect-url="#water">Water</option>
+<option value="42" class="33" data-slug="wood-blocks" data-redirect-url="#wood-blocks">Wood blocks</option>
+<option value="31" class="23" data-slug="wurlitzer-piano" data-redirect-url="#wurlitzer-piano">Wurlitzer piano</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -170,7 +170,13 @@
       position:sticky;
       
        margin-left:0;
-       animation: .5s movelogo forwards ; 
+       /* animation:  movelogo .5s forwards ;  */
+    }
+    .navbar-brand::after {
+      position:sticky;
+      
+       margin-left:0;
+       animation:  movelogo .5s forwards ; 
     }
     @keyframes movelogo {
       from{ margin-left:0;}

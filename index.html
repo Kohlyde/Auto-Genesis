@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Load Highlight.js with Atom One Dark as the default theme -->
   <link id="highlight-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
-  
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="css/index.css">
-<style>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+ 
       background-color: #1e1e1e;
       color: #d4d4d4;
       line-height: 1.6;
@@ -73,90 +73,118 @@
     }
   </style>
 
-<!-- CSS for Sticky Dropdown Styling -->
-<style>
+  <!-- CSS for Sticky Dropdown Styling -->
+  <style>
     /* Sticky Dropdown Container Styling */
-.sticky-dropdown-container {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: auto;
-}
+    .sticky-dropdown-container {
+      position: sticky;
+      top: 0;
 
-/* Form Select Styling */
-.form-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+      z-index: 1000;
+      float: left;
+      /*  background-color: #fff; */
+      padding: 10px;
+      /* border-bottom: 1px solid #ddd; */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      /* margin: auto; */
+      margin-top: 5%;
+    }
 
-/* Add padding to sections for visual spacing */
-[id^="container-"] {
-    scroll-margin-top: 80px; /* Adds a buffer space when scrolling to the section */
-}
-/* Back to Top Button Styling */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease;
-    opacity: 0;
-    z-index: 1000;
-}
+    /* Form Select Styling */
+    .form-select {
+      width: 100%;
+      padding: 10px;
+      float: left;
+      left: 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-/* Fade in and out keyframes */
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
+    /* Add padding to sections for visual spacing */
+    [id^="container-"] {
+      scroll-margin-top: 80px;
+      /* Adds a buffer space when scrolling to the section */
+    }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    /* Back to Top Button Styling */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+      opacity: 0;
+      z-index: 1000;
+    }
 
-/* Fade in when button becomes visible */
-.back-to-top.show {
-    display: flex;
-    animation: fadeIn 0.5s forwards;
-}
+    /* Fade in and out keyframes */
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
 
-/* Hover effects */
-.back-to-top:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-}
+      100% {
+        opacity: 0;
+      }
+    }
 
-/* Disappear after 5 seconds of inactivity */
-.back-to-top.inactive {
-    animation: fadeOut 1s forwards;
-}
-</style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Fade in when button becomes visible */
+    .back-to-top.show {
+      display: flex;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    /* Hover effects */
+    .back-to-top:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Disappear after 5 seconds of inactivity */
+    .back-to-top.inactive {
+      animation: fadeOut 1s forwards;
+    }
+    .navbar-brand {
+      position:sticky;
+      
+       margin-left:0;
+       animation: .5s movelogo forwards ; 
+    }
+    @keyframes movelogo {
+      from{ margin-left:0;}
+      to{ margin-left:10%;}
+    }
+
+  </style>
   <title>PowerShell Script with Theme Options</title>
 </head>
 
-<body>
- <!-- Navbar -->
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-main">
-    <a class="navbar-brand" href="#">
+<body class="wallpaper">
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-main">
+    <a class="navbar-brand"  href="#">
       <svg width="155.00208px" height="24.001709px" viewBox="0 0 155.00208 24.001709" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0L155 0L155 23.9996L0 23.9996L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
         <g id="Group">
@@ -178,30 +206,30 @@
         <!-- &nbsp; <div class="nav-bar">&nbsp;</div> -->
         <!-- &nbsp; -->
 
-        <a class="nav-link" href="./hard_techno.html"> Hard Techno </a> &nbsp;
+        <a class="nav-link" href="./hard_techno.html"> Hard Techno </a>
         <!-- <div class="nav-bar">&nbsp;</div> -->
         <!-- &nbsp; -->
-        <a class="nav-link" href="./deep_tech_step.html"> Deep Tech Step
+        <a class="nav-link" href="./deep_tech_step.html"> Deep Tech Step</a>
         <!-- </a>&nbsp; <div class="nav-bar">&nbsp;</div> -->
         <!-- &nbsp; -->
 
-        <a class="nav-link" href="./neurofunk_dark.html"> Neurofunk Dark
+        <a class="nav-link" href="./neurofunk_dark.html"> Neurofunk Dark</a>
         <!-- </a>&nbsp;<div class="nav-bar">&nbsp;</div> -->
         <!-- &nbsp; -->
 
-        <a class="nav-link" href="./disco.html">Disco </a> 
+        <a class="nav-link" href="./disco.html">Disco </a>
         <!-- &nbsp; 
         <div class="nav-bar">&nbsp;</div>
         &nbsp; -->
-        <a class="nav-link" href="./bass.html">Bass </a> 
+        <a class="nav-link" href="./bass.html">Bass </a>
         <!-- &nbsp; 
         <div class="nav-bar">&nbsp;</div>
         &nbsp; -->
-        <a class="nav-link" href="./others.html">Others </a> 
+        <a class="nav-link" href="./others.html">Others </a>
         <!-- &nbsp; 
         <div class="nav-bar">&nbsp;</div>
         &nbsp; -->
-        <a class="nav-link" href="./contact.html">Contact </a> 
+        <a class="nav-link" href="./contact.html">Contact </a>  
         <!-- nbsp; 
         <div class="nav-bar">&nbsp;&nbsp;</div>
         &nbsp; -->
@@ -217,77 +245,83 @@
       </div>
     </div>
   </nav>
+  <div id="container">
+  <iframe width="100%" height="166" style="margin-top: 2.5%;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1915063265%3Fsecret_token%3Ds-Cn8bV3ZxJaG&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-999486594" title="Køhlyde" target="_blank" style="color: #cccccc; text-decoration: none;">Køhlyde</a> · <a href="https://soundcloud.com/user-999486594/autogenesis/s-Cn8bV3ZxJaG" title="Autogenesis" target="_blank" style="color: #cccccc; text-decoration: none;">Autogenesis</a></div>
+  <hr>
   <h2>Auto-Generative PowerShell Script Example</h2>
   <h3>Introduction to Auto-Generative Code</h3>
   <p>This script demonstrates auto-generative scripting and open-source philosophies. Highlight.js enhances code readability, and the library is part of a philosophy of sharing knowledge.</p>
-
+  <hr>
   <label for="theme">Select Highlight.js Theme:</label>
   <select id="theme" class="theme-selector" onchange="changeTheme(this.value)">
     <option value="atom-one-dark" selected>Atom One Dark</option>
     <option value="dracula">Dracula</option>
     <option value="monokai">Monokai</option>
     <option value="obsidian">Obsidian</option>
-  </select>
+  </select>`
   <!-- Dropdown Menu HTML -->
+  <hr>
   <div class="sticky-dropdown-container">
     <select id="languageDropdown" class="form-select">
-        <option value="">Select a Language</option>
-        <option value="#container-shell1">Shell Script</option>
-        <option value="#container-scala1">Scala</option>
-        <option value="#container-dart1">Dart</option>
-        <option value="#container-perl1">Perl</option>
-        <option value="#container-lua1">Lua</option>
-        <option value="#container-groovy1">Groovy</option>
-        <option value="#container-haskell1">Haskell</option>
-        <option value="#container-julia1">Julia</option>
-        <option value="#container-fsharp1">F#</option>
-        <option value="#container-elixir1">Elixir</option>
-        <option value="#container-clojure1">Clojure</option>
-        <option value="#container-objc1">Objective-C</option>
-        <option value="#container-vbnet1">VB.NET</option>
-        <option value="#container-cobol1">COBOL</option>
-        <option value="#container-fortran1">Fortran</option>
-        <option value="#container-pascal1">Pascal</option>
-        <option value="#container-erlang1">Erlang</option>
-        <option value="#container-asm1">Assembly</option>
-        <option value="#container-prolog1">Prolog</option>
-        <option value="#container-tcl1">Tcl</option>
-        <option value="#container-ada1">Ada</option>
-        <option value="#container-ocaml1">OCaml</option>
-        <option value="#container-scheme1">Scheme</option>
-        <option value="#container-racket1">Racket</option>
-        <option value="#container-lisp1">Lisp</option>
-        <option value="#container-forth1">Forth</option>
-        <option value="#container-smalltalk1">Smalltalk</option>
-        <option value="#container-crystal1">Crystal</option>
-        <option value="#container-haxe1">Haxe</option>
-        <option value="#container-nim1">Nim</option>
-        <option value="#container-kotlinnative1">Kotlin Native</option>
-        <option value="#container-vhdl1">VHDL</option>
-        <option value="#container-verilog1">Verilog</option>
-        <option value="#container-zig1">Zig</option>
-        <option value="#container-qsharp1">Q#</option>
-        <option value="#container-red1">Red</option>
-        <option value="#container-d1">D</option>
-        <option value="#container-mercury1">Mercury</option>
-        <option value="#container-chapel1">Chapel</option>
-        <option value="#container-idris1">Idris</option>
-        <option value="#container-actionscript1">ActionScript</option>
-        <option value="#container-gdscript1">GDScript</option>
-        <option value="#container-purescript1">PureScript</option>
-        <option value="#container-solidity1">Solidity</option>
-        <option value="#container-coq1">Coq</option>
-        <option value="#container-agda1">Agda</option>
-        <option value="#container-rescript1">ReScript</option>
-        <option value="#container-apex1">Apex</option>
-        <option value="#container-moonscript1">MoonScript</option>
-        <option value="#container-k1">K</option>
-        <option value="#container-reasonml1">ReasonML</option>
-        <option value="#container-pony1">Pony</option>
-        <option value="#container-v1">V</option>
-        <option value="#container-godotvisualscript1">Godot VisualScript</option>
+      <option value="">Select a Language</option>
+      <option value="#container-shell1">Shell Script</option>
+      <option value="#container-scala1">Scala</option>
+      <option value="#container-dart1">Dart</option>
+      <option value="#container-perl1">Perl</option>
+      <option value="#container-lua1">Lua</option>
+      <option value="#container-groovy1">Groovy</option>
+      <option value="#container-haskell1">Haskell</option>
+      <option value="#container-julia1">Julia</option>
+      <option value="#container-fsharp1">F#</option>
+      <option value="#container-elixir1">Elixir</option>
+      <option value="#container-clojure1">Clojure</option>
+      <option value="#container-objc1">Objective-C</option>
+      <option value="#container-vbnet1">VB.NET</option>
+      <option value="#container-cobol1">COBOL</option>
+      <option value="#container-fortran1">Fortran</option>
+      <option value="#container-pascal1">Pascal</option>
+      <option value="#container-erlang1">Erlang</option>
+      <option value="#container-asm1">Assembly</option>
+      <option value="#container-prolog1">Prolog</option>
+      <option value="#container-tcl1">Tcl</option>
+      <option value="#container-ada1">Ada</option>
+      <option value="#container-ocaml1">OCaml</option>
+      <option value="#container-scheme1">Scheme</option>
+      <option value="#container-racket1">Racket</option>
+      <option value="#container-lisp1">Lisp</option>
+      <option value="#container-forth1">Forth</option>
+      <option value="#container-smalltalk1">Smalltalk</option>
+      <option value="#container-crystal1">Crystal</option>
+      <option value="#container-haxe1">Haxe</option>
+      <option value="#container-nim1">Nim</option>
+      <option value="#container-kotlinnative1">Kotlin Native</option>
+      <option value="#container-vhdl1">VHDL</option>
+      <option value="#container-verilog1">Verilog</option>
+      <option value="#container-zig1">Zig</option>
+      <option value="#container-qsharp1">Q#</option>
+      <option value="#container-red1">Red</option>
+      <option value="#container-d1">D</option>
+      <option value="#container-mercury1">Mercury</option>
+      <option value="#container-chapel1">Chapel</option>
+      <option value="#container-idris1">Idris</option>
+      <option value="#container-actionscript1">ActionScript</option>
+      <option value="#container-gdscript1">GDScript</option>
+      <option value="#container-purescript1">PureScript</option>
+      <option value="#container-solidity1">Solidity</option>
+      <option value="#container-coq1">Coq</option>
+      <option value="#container-agda1">Agda</option>
+      <option value="#container-rescript1">ReScript</option>
+      <option value="#container-apex1">Apex</option>
+      <option value="#container-moonscript1">MoonScript</option>
+      <option value="#container-k1">K</option>
+      <option value="#container-reasonml1">ReasonML</option>
+      <option value="#container-pony1">Pony</option>
+      <option value="#container-v1">V</option>
+      <option value="#container-godotvisualscript1">Godot VisualScript</option>
     </select>
-</div>
+  </div>
+  <img class="img-fluid" src="https://i1.sndcdn.com/artworks-h3qDleFDLzllIyRD-WjHLOQ-t200x200.jpg" alt="">
   <!-- <div class="dropdown-container"> -->
   <!--   <select id="languageDropdown" class="form-select">
       <option value="">Select a Language</option>
@@ -347,8 +381,9 @@
       <option value="#container-godotvisualscript1">Godot VisualScript</option>
     </select> -->
   <!-- </div> -->
-   <!-- Back to Top Button -->
-<button id="backToTop" class="back-to-top" title="Go to top">&#8679;</button>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" title="Go to top">&#8679;</button>
+
   <h3>Function Overview</h3>
   <p>The script includes two main functions:</p>
   <ol>
@@ -2707,10 +2742,10 @@ fn main() {
               Player</a></li>
         </ul>
       </div>
- 
+
       <!-- Vertical separator bar -->
       <div class="footer-bar">&nbsp;</div>
- 
+
       <div class="footer-column">
         <ul>
           <li><a class="footer-links" href="./home.html">Home</a></li>
@@ -2722,10 +2757,10 @@ fn main() {
               TechStep</a></li>
         </ul>
       </div>
- 
+
       <!-- Vertical separator bar -->
       <div class="footer-bar">&nbsp;&nbsp;</div>
- 
+
       <div class="footer-column">
         <ul>
           <li><a class="footer-links" href="./neurofunk_dark.html">Neurofunk
@@ -2736,10 +2771,10 @@ fn main() {
           <li><a class="footer-links" href="./home.html">Home</a></li>
         </ul>
       </div>
- 
+
       <!-- Vertical separator bar -->
       <div class="footer-bar">&nbsp;&nbsp;</div>
- 
+
       <div class="footer-column">
         <ul>
           <li><a href="OpenSource.html" target="_blank">Source</a></li>
@@ -2751,7 +2786,7 @@ fn main() {
       </div>
     </div>
   </footer>
- 
+
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -2760,7 +2795,7 @@ fn main() {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
   <!-- Detection and Adjust Settings Scripts -->
   <script src="path_to_your_script.js"></script>
- 
+
 
 
 
@@ -2795,63 +2830,64 @@ fn main() {
     }
   </script>
 
-<!-- jQuery and Bootstrap for Smooth Scrolling -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery and Bootstrap for Smooth Scrolling -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- JavaScript for Smooth Scrolling -->
-<script>
-    $(document).ready(function () {
-        $('#languageDropdown').on('change', function () {
-            var target = $(this).val();
-            if (target) {
-                $('html, body').animate({
-                    scrollTop: $(target).offset().top - 20 // Adjusts scroll position to prevent overscroll
-                }, 1000); // Adjust the duration as needed
-            }
-        });
-    });
-    $(document).ready(function () {
-    $('#languageDropdown').on('change', function () {
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    $(document).ready(function() {
+      $('#languageDropdown').on('change', function() {
         var target = $(this).val();
         if (target) {
-            $('html, body').animate({
-                scrollTop: $(target).offset().top - 80 // Adjust this value to control the space above the section
-            }, 1000); // Adjust the duration as needed
+          $('html, body').animate({
+            scrollTop: $(target).offset().top - 20 // Adjusts scroll position to prevent overscroll
+          }, 1000); // Adjust the duration as needed
         }
+      });
     });
-});
-$(document).ready(function () {
-    var backToTop = $('#backToTop');
-    var inactivityTimer;
+    $(document).ready(function() {
+      $('#languageDropdown').on('change', function() {
+        var target = $(this).val();
+        if (target) {
+          $('html, body').animate({
+            scrollTop: $(target).offset().top - 80 // Adjust this value to control the space above the section
+          }, 1000); // Adjust the duration as needed
+        }
+      });
+    });
+    $(document).ready(function() {
+      var backToTop = $('#backToTop');
+      var inactivityTimer;
 
-    // Show button on scroll
-    $(window).on('scroll', function () {
+      // Show button on scroll
+      $(window).on('scroll', function() {
         if ($(this).scrollTop() > 200) { // Adjust scroll position for when the button should appear
-            backToTop.addClass('show').removeClass('inactive');
+          backToTop.addClass('show').removeClass('inactive');
         } else {
-            backToTop.removeClass('show inactive');
+          backToTop.removeClass('show inactive');
         }
-    });
+      });
 
-    // Scroll to top on button click
-    backToTop.on('click', function () {
-        $('html, body').animate({ scrollTop: 0 }, 800);
-    });
+      // Scroll to top on button click
+      backToTop.on('click', function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+      });
 
-    // Mouse inactivity timer to hide button
-    backToTop.on('mouseenter', function () {
+      // Mouse inactivity timer to hide button
+      backToTop.on('mouseenter', function() {
         clearTimeout(inactivityTimer); // Clear the timer when the mouse is over the button
-    }).on('mouseleave', function () {
-        inactivityTimer = setTimeout(function () {
-            backToTop.addClass('inactive'); // Add fade out class after 5 seconds of no interaction
+      }).on('mouseleave', function() {
+        inactivityTimer = setTimeout(function() {
+          backToTop.addClass('inactive'); // Add fade out class after 5 seconds of no interaction
         }, 5000); // 5 seconds delay before disappearing
+      });
     });
-});
-
-</script>
- <!-- </div> -->
-
+  </script>
+  <!-- </div> -->
+</div>
 </body>
 
 </html>
